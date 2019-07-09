@@ -26,6 +26,11 @@ AMRI can be easily built, rebuilt and deployed as it leverages 4 existing file s
 - ISMRMRD file standard for acquired raw data
 - DICOM file standard for reconstructed image data
 
+### Self administered MR
+AMRI can also enable self administered MR scanning with the inclusion of MR-safe A/V accessories.
+
+  ![amri-sos](https://github.com/imr-framework/amri/blob/master/amri_sos.png)
+
 ### Demos
 An example of some of these file standards as part of brain screen protocol [[7]](#references) experiments can be found [here](https://github.com/imr-framework/imr-framework/tree/master/amri). YouTube demos can be found here:
 - Invivo experiment, [link](https://youtu.be/ccKxyWZLjto)
