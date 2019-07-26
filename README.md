@@ -29,7 +29,7 @@ AMRI can be easily built, rebuilt and deployed as it leverages 4 existing file s
 ### Self administered MR
 AMRI can also enable self administered MR scanning with the inclusion of MR-safe A/V accessories.
 
-  ![amri_self_admin](https://github.com/imr-framework/amri/blob/master/amri_self_admin.png)
+  ![amri_self_admin](https://github.com/imr-framework/amri/blob/amri/amri_self_admin.png)
 
 ### Demos
 YouTube demos can be found here:
