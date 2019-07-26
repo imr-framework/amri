@@ -1,6 +1,6 @@
 ## Autonomous Magnetic Resonance Imaging
 
-Check out a concept video on [YouTube](https://www.youtube.com/watch?v=2XroYwUxzD4) to learn more about AMRI. To request AMRI to be used as online service, fill out this [form](https://goo.gl/forms/1FpGeH7S9SJbaBP53). Read more [here](#demos).
+Check out a concept video on [YouTube](https://www.youtube.com/watch?v=2XroYwUxzD4) to learn more about AMRI. We also introduce AMRI-Scanner as an Online Service (AMRI-SOS). AMRI-SOS is a free to use online service. Check out the `amri-sos` branch to learn more, or fill out this [form](https://goo.gl/forms/1FpGeH7S9SJbaBP53) to request AMRI-SOS scans.
 
 ### Why autonomous?
 Globally, there are **4.6 MRI scanners per 1,000,000** people. In comparison, there are 36.72 per 1,000,000 in the United States [[1]](#references)[[2]](#references), and the **low-income countries have 0.1 per 1,000,000**. Annual Healthcare spending in the US is 700 billion USD. Of this **125 – 200 billion USD** (at least) is accounted for by diagnostic imaging [[3]](#references). Autonomous scanners can play a major role in tackling the challenges of delivering MR to a larger population with low-incomes. [[4]](#references).
@@ -29,10 +29,10 @@ AMRI can be easily built, rebuilt and deployed as it leverages 4 existing file s
 ### Self administered MR
 AMRI can also enable self administered MR scanning with the inclusion of MR-safe A/V accessories.
 
-  ![amri-sos](https://github.com/imr-framework/amri/blob/master/amri_sos.png)
+  ![amri_self_admin](https://github.com/imr-framework/amri/blob/master/amri_self_admin.png)
 
 ### Demos
-An example of some of these file standards as part of brain screen protocol [[7]](#references) experiments can be found [here](https://github.com/imr-framework/imr-framework/tree/master/amri). YouTube demos can be found here:
+YouTube demos can be found here:
 - Invivo experiment, [link](https://youtu.be/ccKxyWZLjto)
 - Phantom experiment, [link](https://youtu.be/ZToRLwXQW1A)
 
@@ -48,8 +48,8 @@ AMRI-SOS enables students and researchers with limited access to MRI hardware to
 
 [4] Wang, Ge, et al. "Image Reconstruction is a New Frontier of Machine Learning." IEEE transactions on medical imaging 37.6 (2018): 1289-1296.
 
-[5] [Layton, Kelvin J., et al. "Pulseq: A rapid and hardware‐independent pulse sequence prototyping framework." Magnetic resonance in medicine 77.4 (2017): 1544-1552.](https://onlinelibrary.wiley.com/doi/abs/10.1002/mrm.26235)
+[5] [Ravi, Keerthi Sravan, et al. "Pulseq-Graphical Programming Interface: Open source visual environment for prototyping pulse sequences and integrated magnetic resonance imaging algorithm development." Magnetic resonance imaging 52 (2018): 9-15.](https://www.sciencedirect.com/science/article/pii/S0730725X1830033X)
 
-[6] [Ravi, Keerthi Sravan, et al. "Pulseq-Graphical Programming Interface: Open source visual environment for prototyping pulse sequences and integrated magnetic resonance imaging algorithm development." Magnetic resonance imaging 52 (2018): 9-15.](https://www.sciencedirect.com/science/article/pii/S0730725X1830033X)
+[6] [Layton, Kelvin J., et al. "Pulseq: A rapid and hardware‐independent pulse sequence prototyping framework." Magnetic resonance in medicine 77.4 (2017): 1544-1552.](https://onlinelibrary.wiley.com/doi/abs/10.1002/mrm.26235)
 
 [7] MRI Brain Screen Protocol, https://radiopaedia.org/articles/mri-protocol-brain-screen-2
