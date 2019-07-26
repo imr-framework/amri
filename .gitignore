@@ -125,3 +125,6 @@ dmypy.json
 
 # Ignore dat2py
 dat2py/
+
+# Ignore secret files
+secrets/
