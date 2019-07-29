@@ -123,8 +123,11 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Ignore dat2py
+# PyCharm files
+.idea/
+
+# dat2py
 dat2py/
 
-# Ignore secret files
+# Google Cloud secret files
 secrets/
