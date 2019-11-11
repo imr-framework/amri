@@ -36,6 +36,21 @@ YouTube demos can be found here:
 - Invivo experiment, [link](https://youtu.be/ccKxyWZLjto)
 - Phantom experiment, [link](https://youtu.be/ZToRLwXQW1A)
 
+### Dependencies
+google-cloud-speech
+google-cloud-texttospeechkeras
+numpy
+Pillow
+pyaudio
+pyautogui
+pygame
+pandas
+pydrive
+pypulseq
+scipy
+tensorflow
+tqdm
+
 #### AMRI - Scanner as an Online Service (AMRI-SOS)
 AMRI-SOS enables students and researchers with limited access to MRI hardware to leverage AMRI to run custom pulse sequences designed on the Pulseq[[5, 6]](#references) framework. If you want to run your scans on a Siemens Prisma 3T, fill out this [form](https://goo.gl/forms/1FpGeH7S9SJbaBP53).
 
