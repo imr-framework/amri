@@ -1,12 +1,12 @@
 ## Autonomous Magnetic Resonance Imaging (AMRI)
 
-👉 [AMRI concept video](amri-concept-video) 👈
+👉 [AMRI concept video][amri-concept-video]
 
 Autonomous Magnetic Resonance Imaging, or AMRI, is meant to operate end-to-end.
 What this means is that, AMRI should intelligently acquire, reconstruct and
 visualize MR data.
 
-We also introduce AMRI-Scanner as an Online Service (AMRI-SOS). AMRI-SOS is a free to use online service. Check out the [`amri-sos`](#amri-sos) branch to learn more, or fill out this [form](amri-sos-form) to request AMRI-SOS scans.
+We also introduce AMRI-Scanner as an Online Service (AMRI-SOS). AMRI-SOS is a free to use online service. Check out the [`amri-sos`][amri-sos] branch to learn more, or fill out this [form][amri-sos-form] to request AMRI-SOS scans.
 
 ### Why AMRI?
 Globally, there are **4.6 MRI scanners per 1,000,000** people. In comparison, there are 36.72 per 1,000,000 in the United States [[1]](#references)[[2]](#references), and the **low-income countries have 0.1 per 1,000,000**. Annual Healthcare spending in the US is 700 billion USD. Of this **125 – 200 billion USD** (at least) is accounted for by diagnostic imaging [[3]](#references). Autonomous scanners can play a major role in tackling the challenges of delivering MR to a larger population with low-incomes. [[4]](#references).
@@ -39,8 +39,8 @@ AMRI can also enable self administered MR scanning with the inclusion of MR-safe
 
 ### Video demos
 YouTube demos can be found here:
-- Invivo experiment, [link](invivo-exp-1)
-- Phantom experiment, [link](invivo-exp-2)
+- Invivo experiment, [link][invivo-exp-1]
+- Phantom experiment, [link][invivo-exp-2]
 
 ### Dependencies
 google-cloud-speech
@@ -59,9 +59,9 @@ tensorflow
 tqdm
 
 #### AMRI - Scanner as an Online Service (AMRI-SOS)
-👉 [AMRI-SOS form](amri-sos-form) 👈
+👉 [AMRI-SOS form][amri-sos-form] 👈
 
-AMRI-SOS enables students and researchers with limited access to MRI hardware to leverage AMRI to run custom pulse sequences designed on the Pulseq [[5, 6, 7]](#references) framework. If you want to run your scans on a Siemens Prisma 3T, fill out this [form](amri-sos-form).
+AMRI-SOS enables students and researchers with limited access to MRI hardware to leverage AMRI to run custom pulse sequences designed on the Pulseq [[5, 6, 7]](#references) framework. If you want to run your scans on a Siemens Prisma 3T, fill out this [form][amri-sos-form].
 
 ### References
 [1] Atlas of MS 2013, https://www.msif.org/wp-content/uploads/2014/09/Atlas-of-MS.pdf
