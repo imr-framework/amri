@@ -2,7 +2,7 @@ import os
 
 import numpy as np
 
-from amri.isp.os_elm import OS_ELM
+from amri.cloud.isp.os_elm import OS_ELM
 from amri.utils.log_utils import log
 
 

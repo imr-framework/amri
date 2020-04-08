@@ -2,7 +2,7 @@ import numpy as np
 import tqdm
 from keras.utils import to_categorical
 
-from amri.isp.os_elm import OS_ELM
+from amri.cloud.isp.os_elm import OS_ELM
 
 
 def main():
