@@ -2,26 +2,17 @@
 Author: Keerthi Sravan Ravi
 """
 
-if __name__ == '__main__':
-    import sys
-    import os
-
-    script_path = os.path.abspath(__file__)
-    SEARCH_PATH = script_path[:script_path.index('imr-framework') + len('imr-framework') + 1]
-    sys.path.insert(0, SEARCH_PATH)
-
 from math import pi
 
 import numpy as np
-
-from pulseq.core.Sequence.sequence import Sequence
-from pulseq.core.calc_duration import calc_duration
-from pulseq.core.make_adc import makeadc
-from pulseq.core.make_block import make_block_pulse
-from pulseq.core.make_delay import make_delay
-from pulseq.core.make_sinc import make_sinc_pulse
-from pulseq.core.make_trap import make_trapezoid
-from pulseq.core.opts import Opts
+from pypulseq.Sequence.sequence import Sequence
+from pypulseq.calc_duration import calc_duration
+from pypulseq.make_adc import makeadc
+from pypulseq.make_block import make_block_pulse
+from pypulseq.make_delay import make_delay
+from pypulseq.make_sinc import make_sinc_pulse
+from pypulseq.make_trap import make_trapezoid
+from pypulseq.opts import Opts
 
 
 def make_t1_mprage(te, tr, flip_deg, Nx=128, Ny=128, n_slices=3, rf_offset=0):
