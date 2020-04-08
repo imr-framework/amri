@@ -1,5 +1,5 @@
 import datetime
-import os
+from pathlib import Path
 
 from amri.utils import constants
 from amri.utils.json_utils import JsonUtils
@@ -38,7 +38,8 @@ class Sitrep:
         self.json_obj.save_json_str_to_path(json_str=sitrep_json_str, path='temp.txt')
         self.sitrep_drive_file.SetContentFile('temp.txt')
         self.sitrep_drive_file.Upload()
-        os.remove('temp.txt')
+        del self.sitrep_drive_file
+        Path('temp.txt').unlink()
 
     def update_sitrep(self, verbose: bool = True):
         """Get latest Sitrep from Google Drive."""
@@ -69,9 +70,10 @@ class Sitrep:
         self.json_obj.save_json_str_to_path(json_str=sitrep_json_str, path='temp.txt')
         self.sitrep_drive_file.SetContentFile('temp.txt')
         self.sitrep_drive_file.Upload()
-        os.remove('temp.txt')
+        del self.sitrep_drive_file
+        Path('temp.txt').unlink()
 
-        if os.path.exists(os.path.dirname(self.MAC_SCAN_JOB_PATH)):  # Check if directory exists
+        if Path(self.MAC_SCAN_JOB_PATH).parent.exists():  # Check if directory exists
             self.json_obj.save_json_str_to_path(json_str=sitrep_json_str,
                                                 path=self.MAC_SCAN_JOB_PATH)  # Also save to local
 

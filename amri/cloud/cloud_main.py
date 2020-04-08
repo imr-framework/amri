@@ -1,9 +1,8 @@
 if __name__ == '__main__':
     import sys
-    import os
+    from pathlib import Path
 
-    script_path = os.path.abspath(__file__)
-    SEARCH_PATH = script_path[:script_path.index('imr-framework') + len('imr-framework') + 1]
+    SEARCH_PATH = Path(__file__).parent.parent.parent
     sys.path.insert(0, SEARCH_PATH)
 
 import time
@@ -13,8 +12,8 @@ from PIL import Image
 from scipy.misc import imrotate
 
 import amri.dat2py.dat2py_main as dat2py
-import amri.lut.lut as lut
-from amri.isp import tf_elm_load_model
+import amri.cloud.lut.lut as lut
+from amri.cloud.isp import tf_elm_load_model
 from amri.utils import constants
 from amri.utils import crypt_utils
 from amri.utils.dbutils import DbUtils

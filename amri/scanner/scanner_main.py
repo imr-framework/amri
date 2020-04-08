@@ -1,22 +1,21 @@
 if __name__ == '__main__':
     import sys
-    import os
+    from pathlib import Path
 
-    script_path = os.path.abspath(__file__)
-    SEARCH_PATH = script_path[:script_path.index('amri') + len('amri') + 1]
+    SEARCH_PATH = Path(__file__).parent.parent.parent
     sys.path.insert(0, SEARCH_PATH)
 
 import os
 import shutil
 import time
 
-from scanner import scanner_ui_main as scanner_ui_main
-from scanner import scanner_ui_repeat as scanner_ui_repeat
-from utils import constants
-from utils import crypt_utils
-from utils.json_utils import JsonUtils
-from utils.log_utils import log
-from utils.sitrep_offline import Sitrep_offline
+from amri.scanner import scanner_ui_main as scanner_ui_main
+from amri.scanner import scanner_ui_repeat as scanner_ui_repeat
+from amri.utils import constants
+from amri.utils import crypt_utils
+from amri.utils.json_utils import JsonUtils
+from amri.utils.log_utils import log
+from amri.utils.sitrep_offline import Sitrep_offline
 
 FILE_CHECK_INTERVAL = constants.FILE_CHECK_INTERVAL
 

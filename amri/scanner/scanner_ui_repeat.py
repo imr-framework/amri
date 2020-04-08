@@ -1,9 +1,8 @@
 if __name__ == '__main__':
     import sys
-    import os
+    from pathlib import Path
 
-    script_path = os.path.abspath(__file__)
-    SEARCH_PATH = script_path[:script_path.index('imr-framework') + len('imr-framework') + 1]
+    SEARCH_PATH = Path(__file__).parent.parent.parent
     sys.path.insert(0, SEARCH_PATH)
 
 import os

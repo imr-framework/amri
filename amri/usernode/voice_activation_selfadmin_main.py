@@ -3,19 +3,10 @@ import os
 import time
 import uuid
 
-from pygame import mixer
-
-if __name__ == '__main__':
-    import sys
-
-    script_path = os.path.abspath(__file__)
-    SEARCH_PATH = script_path[:script_path.index('imr-framework') + len('imr-framework') + 1]
-    sys.path.insert(0, SEARCH_PATH)
-
 import amri.utils.constants as utils_constants
-from amri.utils import log_utils
 from amri.usernode.google_stt import google_stt
 from amri.usernode.google_tts import google_tts
+from amri.utils import log_utils
 
 audio_file_path = os.path.dirname(os.path.abspath(__file__))
 audio_file_path = os.path.normpath(os.path.join(audio_file_path, 'output.mp3'))
@@ -28,8 +19,7 @@ def main():
     subject_info : list
         List of subject parameter information; first entry in the list is timestamp
     """
-    # Initialize PyAudio mixer, Google TTS and Google STT
-    mixer.init()
+    # Initialize Google TTS and Google STT
     google_stt_obj = google_stt()
     google_tts_obj = google_tts()
 

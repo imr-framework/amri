@@ -1,19 +1,16 @@
 if __name__ == '__main__':
     import sys
-    import os
+    from pathlib import Path
 
-    script_path = os.path.abspath(__file__)
-    SEARCH_PATH = script_path[:script_path.index('imr-framework') + len('imr-framework') + 1]
-    sys.path.insert(0, SEARCH_PATH)
+    SEARCH_PATH = Path(__file__).parent.parent.parent
+    sys.path.insert(0, str(SEARCH_PATH))
 
 import threading
 import time
 
-from amri.usernode import voice_activation_main
-from amri.usernode import voice_activation_update_time
+from amri.usernode import (voice_activation_main, voice_activation_update_time)
 from amri.usernode.google_tts import google_tts
-from amri.utils import constants
-from amri.utils import crypt_utils
+from amri.utils import (constants, crypt_utils)
 from amri.utils.json_utils import JsonUtils
 from amri.utils.log_utils import log
 from amri.utils.pydrive_utils import PyDriveUtils

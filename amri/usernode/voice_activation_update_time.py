@@ -1,14 +1,5 @@
 import os
 
-from pygame import mixer
-
-if __name__ == '__main__':
-    import sys
-
-    script_path = os.path.abspath(__file__)
-    SEARCH_PATH = script_path[:script_path.index('imr-framework') + len('imr-framework') + 1]
-    sys.path.insert(0, SEARCH_PATH)
-
 from amri.usernode.google_stt import google_stt
 from amri.usernode.google_tts import google_tts
 from amri.utils.log_utils import log
@@ -31,8 +22,7 @@ def main(time_seconds_old, time_seconds_new):
     bool
         Whether the user wishes to proceed with the modified acquisition time or not.
     """
-    # Initialize PyAudio mixer, Google TTS and Google STT
-    mixer.init()
+    # Initialize Google TTS and Google STT
     google_stt_obj = google_stt()
     google_tts_obj = google_tts()
     time_mins_old = round(time_seconds_old / 60, 1)

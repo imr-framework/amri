@@ -1,4 +1,4 @@
-import os
+from pathlib import Path
 
 from pydrive.auth import GoogleAuth
 from pydrive.drive import GoogleDrive
@@ -8,9 +8,8 @@ from amri.utils.log_utils import log
 
 class PyDriveUtils:
     def __init__(self):
-        path_to_settings_yaml = os.path.dirname(__file__)
-        path_to_settings_yaml = os.path.join(path_to_settings_yaml, 'settings.yaml')
-        self.gauth = GoogleAuth(settings_file=path_to_settings_yaml)
+        path_pydrive_auth_settings = Path(__file__).parent / 'creds' / 'pydrive_auth_settings.yaml'
+        self.gauth = GoogleAuth(settings_file=str(path_pydrive_auth_settings))
         self.gauth.LocalWebserverAuth()
         self.drive = GoogleDrive(self.gauth)
 
@@ -45,7 +44,7 @@ class PyDriveUtils:
         """
         if file_name is None:
             # Retrieve file name from path of file on disk
-            file_name = os.path.split(file_path)[1]
+            file_name = Path(file_name).parts[-1]
         log('Uploading {}...'.format(file_name), verbose=verbose)
         if child_of_folder is None:
             upload_file = self.drive.CreateFile({'title': file_name})
